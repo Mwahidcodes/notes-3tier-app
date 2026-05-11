@@ -34,4 +34,23 @@ pipeline {
             }
         }
     }
+
+    post {
+
+        success {
+            emailext(
+                subject: 'Jenkins Build Success - Notes App',
+                body: 'Deployment successful! Your 3-tier Notes App is running on AWS EC2.',
+                to: 'mariawahid999@gmail.com'
+            )
+        }
+
+        failure {
+            emailext(
+                subject: 'Jenkins Build Failed - Notes App',
+                body: 'Deployment failed. Check Jenkins console output.',
+                to: 'mariawahid999@gmail.com'
+            )
+        }
+    }
 }
