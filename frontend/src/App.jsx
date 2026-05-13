@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import axios from "axios";
 import "./style.css";
 
-const API_URL = "http://13.48.56.126:5000";
+const API_URL = "http://16.171.20.160:5000";
 
 function App() {
   const [content, setContent] = useState("");
