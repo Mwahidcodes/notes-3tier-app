@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>CI/CD Application</h1>
+      <h1>CI/CD DevOps Assignment</h1>
 
       <textarea
         placeholder="Write your note..."
